@@ -1,0 +1,200 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="music-player">
+  <audio id="audio-player">
+  <source src="/storage/emulated/0/xender/audio/07.mp3" name="transparency"  type="audio/mp3"/>
+  </audio></a>
+  <audio id="audio-player">
+  <source src="/storage/emulated/0/xender/audio/02.mp3" type="audio/mp3"/>
+  </audio>
+  <audio id="audio-player">
+  <source src="/storage/emulated/0/xender/audio/03.mp3" type="audio/mp3"/>
+  </audio>
+  <audio id="audio-player">
+  <source src="/storage/emulated/0/xender/audio/04.mp3" type="audio/mp3"/>
+  </audio>
+  <audio id="audio-player">
+  <source src="/storage/emulated/0/xender/audio/05.mp3" type="audio/mp3"/>
+  </audio>
+  <div class="controls">
+    <button id="prev-btn"><i class="fa fa-backward"></i></button>
+    <button id="play-pause-btn"><b class="fa fa-play"></b></button>
+    <button id="next-btn"><i class="fa fa-forward"></i></button>
+  </div>
+  <div id="play1" onclick="sayHello()" ></div>
+  <div id="play2" ></div>
+  <div id="play3" ></div>
+  <div id="play4" ></div>
+  
+  
+</div>
+
+
+
+<script type="text/javascript">
+
+const audioPlayer = document.getElementById("audio-player");
+const playPauseBtn = document.getElementById("play-pause-btn");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+
+let currentTrack = 1;
+
+function playPauseTrack() {
+  if (audioPlayer.paused) {
+    audioPlayer.play();
+    playPauseBtn.innerHTML = '<h1 class="fa fa-pause"></h1>';
+  } else {
+    audioPlayer.pause();
+    playPauseBtn.innerHTML = '<b class="fa fa-play"></b>';
+  }
+}
+
+function prevTrack() {
+  currentTrack--;
+  if (currentTrack < 1) {
+    currentTrack = 3;
+  }
+  audioPlayer.src = `song${currentTrack}.mp3`;
+  audioPlayer.play();
+  playPauseBtn.innerHTML = '<i class="fa fa-pause"></i>';
+}
+
+function nextTrack() {
+  currentTrack++;
+  if (currentTrack > 3) {
+    currentTrack = 1;
+  }
+  audioPlayer.src = `song${currentTrack}.mp3`;
+  audioPlayer.play();
+  playPauseBtn.innerHTML = '<i class="fa fa-pause"></i>';
+}
+
+playPauseBtn.addEventListener("click", playPauseTrack);
+prevBtn.addEventListener("click", prevTrack);
+nextBtn.addEventListener("click", nextTrack);
+
+</script>
+<style type="text/css">
+body {
+background:black;
+}
+
+.music-player {
+background:blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  top:400px;
+  height:100px;
+  width:345px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color:blue ;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  height:70px;
+  width:70px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: blue;
+}
+#play-pause-btn  {
+background:red;
+height:100px;
+font-size:0px;
+width:100px;
+position:absolute;
+top:0px;
+right:125px;
+
+}
+#play {
+background:green;
+height:30px;
+width:12px;
+position:absolute;
+top:46px;
+right:166px;
+}
+#play3 {
+background:white;
+height:30px;
+width:8px;
+position:absolute;
+top:38px;
+right:38px;
+}
+#play4 {
+background:white;
+height:30px;
+width:8px;
+position:absolute;
+top:38px;
+right:300px;
+}
+
+b  {
+ width:0px;
+ height:0px;
+ border-top:17px solid transparent;
+ border-bottom:15px solid transparent;
+ border-left:30px solid white;
+ position:absolute;
+ top:38px;
+ left:35px;
+ 
+}
+
+#next-btn   {
+ width:0px;
+ height:0px;
+ border-top:15px solid transparent;
+ border-bottom:15px solid transparent;
+ border-left:20px solid white;
+ position:absolute;
+ top:38px;
+ right:40px;
+ 
+}
+#prev-btn   {
+ width:0px;
+ height:0px;
+ border-top:15px solid transparent;
+ border-bottom:15px solid transparent;
+ border-right:20px solid white;
+ position:absolute;
+ top:38px;
+ right:275px;
+ 
+}
+
+h1 {
+background:linear-gradient(white 40%, red 40%, red 60%, white 60% );
+color:green;
+height:30px;
+width:29px;
+position:absolute;
+top:38px;
+left:35px;
+transform: rotate(-90deg);
+	
+}
+
+</style>
+<script type="text/javascript" charset="utf-8"> 
+ function sayHello() { 
+ document.getElementById('play1').innerHTML = '<div id="play1" onclick="sayHello()" ></div>'; 
+ } 
+ </script> 

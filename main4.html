@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About us</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+</head>
+<body>
+<style type="text/css">
+
+sayHello(){
+background:black;
+height:100px;
+}
+
+#header ul {
+ list-style: none;
+ margin: 10px;
+ padding: 0;
+}
+#header ul li a {
+ background-color: #FFFFFF;
+ border: 1px solid #999999;
+ color: #222222;
+ display: block;
+ font-size: 17px;
+ font-weight: bold;
+ margin-bottom: -1px;
+ padding: 12px 10px;
+ text-decoration: none;
+}
+#content, #sidebar {
+ padding: 10px;
+}
+#footer {
+ display: none;
+}
+#header h1 a {
+ text-shadow: 0px 1px 1px #fff;
+ background: -webkit-gradient(linear, left top, left bottom, 
+ from(#999), to(gray));
+ text-decoration:none;
+ position:absolute;
+ top:15px;
+ left:90px;
+}
+link, a, visited {
+color:black;
+}
+h1 {
+background:-webkit-gradient(linear, left top, left bottom, 
+from(#999), to(gray));
+height:50px;
+margin:10px 0px;
+
+}
+#header ul li:first-child a {
+ -webkit-border-top-left-radius: 8px;
+ -webkit-border-top-right-radius: 8px;
+}
+#header ul li:last-child a {
+ -webkit-border-bottom-left-radius: 8px;
+ -webkit-border-bottom-right-radius: 8px;
+}
+body {
+background:silver;
+}
+#header ul.hide {
+ display: none;
+}
+.leftButton {
+background:black;
+ position: absolute;
+ top: 18px;
+ border:pc solid white;
+ left: 15px;
+ height: 30px;
+ font-weight: bold;
+ width:50px;
+text-align: ;
+ color:white;
+ text-shadow: rgba (0,0,0,0,.6) 0px -1px 1px;
+ line-height: 28px;
+ border-width: 0 8px 0 8px;
+ 
+}
+.leftButton1 {
+background:black;
+ position: absolute;
+ top: 18px;
+ left: 295px;
+ height: 30px;
+ font-weight: bold;
+ width:50px;
+text-align:center;
+ color:white;
+ text-shadow: rgba (0,0,0,0,.6) 0px -1px 1px;
+ line-height: 28px;
+ border-width: 0 8px 0 8px;
+}
+#header div.pressed {
+ -webkit-border-image: url(images/button_clicked.png) 0 8 0 8;
+}
+.progress{
+color:black;
+
+}
+#rogress {
+ -webkit-border-radius: 10px;
+ background-color: rgba(0,0,0,.7);
+ color: white;
+ font-size: 18px;
+ font-weight: bold;
+ height: 80px;
+ left: 75px;
+ line-height: 80px;
+ margin: 0 auto;
+ position: absolute;
+ text-align: center;
+ top: 200px;
+ width: 200px;
+ position:fixed;
+}
+.bar1{
+position:absolute;
+top:17px;
+color:white;
+left:30px;
+
+}
+.bar2{
+position:absolute;
+top:24px;
+color:white;
+left:30px;
+
+}
+.bar{
+position:absolute;
+top:10px;
+color:white;
+left:30px;
+
+}
+#A{
+font-size:40px;
+position:absolute;
+top:80px;
+left:300px;
+
+}
+#B{
+font-size:40px;
+position:absolute;
+top:125px;
+left:300px;
+
+}
+#C{
+font-size:40px;
+position:absolute;
+top:170px;
+left:300px;
+
+}
+#D{
+font-size:40px;
+position:absolute;
+top:215px;
+left:300px;
+
+}
+#E{
+font-size:40px;
+position:absolute;
+top:275px;
+left:300px;
+
+}
+#F{
+font-size:40px;
+position:absolute;
+top:320px;
+left:300px;
+
+}
+#G{
+font-size:40px;
+position:absolute;
+top:365px;
+left:300px;
+
+}
+.imgs1{
+background:gray;
+width:345px;
+height:180px;
+filter:grayscale(100%);
+}
+
+.imgs{
+top:425px;
+right:150px;
+filter:grayscale(100%);
+position:absolute;
+}
+.circle {
+background:black;
+height:60px;
+width:60px;
+border:2px solid black;
+border-radius:50px;
+position:absolute;
+top:440px;
+right:150px;
+
+
+}
+.play {
+background:white;
+height:30px;
+width:12px;
+position:absolute;
+top:456px;
+right:185px;
+
+}
+.play2 {
+background:white;
+height:30px;
+width:12px;
+position:absolute;
+top:456px;
+right:168px;
+}
+.play3 {
+background:white;
+height:30px;
+width:8px;
+position:absolute;
+top:456px;
+right:40px;
+}
+.play4 {
+background:white;
+height:30px;
+width:8px;
+position:absolute;
+top:456px;
+right:302px;
+}
+
+#triangle-right{
+ width:0px;
+ height:0px;
+ border-top:17px solid transparent;
+ border-bottom:15px solid transparent;
+ border-left:30px solid white;
+ position:absolute;
+ top:456px;
+ right:168px;
+ 
+}
+
+#triangle-right1{
+ width:0px;
+ height:0px;
+ border-top:15px solid transparent;
+ border-bottom:15px solid transparent;
+ border-left:20px solid white;
+ position:absolute;
+ top:456px;
+ right:50px;
+ 
+}
+#triangle-right2{
+ width:0px;
+ height:0px;
+ border-top:15px solid transparent;
+ border-bottom:15px solid transparent;
+ border-right:20px solid white;
+ position:absolute;
+ top:456px;
+ right:280px;
+ 
+}
+.top{
+position:absolute;
+top:510px;
+right:30px;
+}
+
+</style>
+<div id="container" >
+<div id="header">
+<h1 id="" align="center"  ><a href="" >MUSIC HIVE</a></h1>
+<div id="utility">
+<div class="leftButton"></div>
+<div class="leftButton1">Back</div>  
+<div class="bar" >___</div>
+<div class="bar1" >___</div>
+<div class="bar2" >___</div>
+</div>
+</div>
+</div>
+<img >
+
+</body>
+<body>
+<img src="/storage/emulated/0/xender/image/astro.jpg" height="345" width="345"  >
+</body>
+<body>
+<img src="/storage/emulated/0/log.jpg" height="60" width="60"  class="imgs" >
+<div class="imgs1" ></div>
+<div class="circle" ></div>
+<div id="logs" >
+<div class="play" ></div>
+<div class="play2" ></div>
+</div>
+<div id="triangle-right" onclick="sayHello()"></div>
+<div id="triangle-right1"></div>
+<div id="triangle-right2"></div>
+<div class="play3" ></div>
+<div class="play4" ></div>
+<audio controls="" class="top"  src=""></audio>
+<script type="text/javascript" charset=utf-8">
+function sayHello(){
+document.getElementById('triangle-right').innerHTML = document.getElementById('play'); 
+}
+
+
+</script>
+</body>
+As an AI language model, I can provide you with the code for a bar loading animation. Here's a simple example:
+
+HTML:
+
+
+<div class="loading-bar1"></div>
+
+
+CSS:
+
+<style type="text/css">
+.loading-bar1 {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.loading-bar1::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: #2196f3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loading-bar1-animation 2s ease-in-out infinite;
+}
+
+@keyframes loading-bar1-animation {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+</style>
+
+This code will create a horizontal bar that starts empty and gradually fills up with a blue color. The animation will repeat indefinitely. You can adjust the duration and timing function of the animation to suit your needs.
+</html>
+Sure, here's an example of HTML and CSS code for a circular loading animation:
+
+HTML:
+
+
+<div class="loading-spinner"></div>
+
+
+CSS:
+
+<style type="text/css">
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+  border-top-color: #2196f3;
+  animation: loading-spinner-animation 1s ease-in-out infinite;
+}
+
+@keyframes loading-spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+
+This code will create a circular loading spinner that rotates continuously. You can adjust the size and colors of the spinner to match your design. The animation duration and timing function can also be modified as needed.
+
+<div class="loading-bars">
+  <div class="loading-bar"></div>
+  <div class="loading-bar"></div>
+  <div class="loading-bar"></div>
+</div>
+
+<style type="text/css">
+
+.loading-bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-bar {
+  width: 4px;
+  height: 25px;
+  margin: 0 4px;
+  background-color: black;
+  animation: loading-bar-animation 1s ease-in-out infinite;
+  animation-duration:-2s;
+  animation-iteration-count:5;
+  overflow:hidden;
+}
+
+.loading-bar:nth-child(1) {
+  animation-delay: -0.35s;
+}
+
+.loading-bar:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes loading-bar-animation {
+  0% {
+    transform: scaleY(0.1);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.1);
+  }
+}
+
+</style>
